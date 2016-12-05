@@ -1,0 +1,52 @@
+\documentclass{beamer}
+
+\usepackage{natbib}
+
+\usepackage[frenchb]{babel}
+
+\usepackage[T1]{fontenc}
+
+\usepackage[utf8]{inputenc}
+
+\usepackage{amsmath}
+
+\usepackage[labelformat=empty]{caption}
+
+\usepackage{cclicenses}
+
+\usetheme{Darmstadt}
+
+\title{Hygiène cryptographique}
+
+\author{\cc Ilan 'trog' Dubois}
+
+\AtBeginSection[]
+{
+    \begin{frame}
+        \frametitle{Sommaire}
+            \tableofcontents[currentsection]
+    \end{frame}
+}
+
+\begin{document}
+    \begin{frame}
+        \titlepage
+    \end{frame}
+    \section{Mb dszquphsbqijf}
+    \subsection{Utilité}
+        \begin{frame}{label=utilisation}
+            \frametitle{Les cas d'utilisation}
+            \begin{center}
+                \begin{itemize}
+                    \item Rendre incompréhensible un document quelconque pour toute personne n'ayant pas la clé.
+                    \item Assurer l'intégrité d'un document.
+                    \item Assurer l'authenticité d'un document.
+                \end{itemize}
+            \end{center}
+        \end{frame}
+        \appendix
+        \begin{frame}
+            \bibliography{src/tracking}{}
+            \bibliographystyle{plain}
+        \end{frame}
+\end{document}
