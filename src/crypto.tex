@@ -10,6 +10,10 @@
 
 \usepackage{amsmath}
 
+\usepackage{tcolorbox}
+
+\usepackage{lipsum}
+
 \usepackage[labelformat=empty]{caption}
 
 \usepackage{cclicenses}
@@ -33,7 +37,20 @@
         \titlepage
     \end{frame}
     \section{Mb dszquphsbqijf}
-    \subsection{Utilité}
+    \subsection{Définitions}
+        \begin{frame}{label=vocabulaire}
+            \frametitle{Vocabulaire}
+            \begin{center}
+                \begin{itemize}
+                    \item \textbf{Chiffrer}: Rendre incompréhensible un messgae pour qui n'aurait pas la clé.
+                    \item \textbf{Déchiffrer}: Rendre à un message sa forme originale à l'aide de la clé.
+                    \item \textbf{Décrypter}: Rendre à un message sa forme originale sans utiliser de clé (casser le code).
+                    \begin{tcolorbox}[colback=green!5,colframe=green!40!black,title=Mais crypter alors ?]
+                      En anglais chiffrer se dit \textit{encrypt}, d'où la confusion courante avec le terme \textit{crypter} qui en français signifie mettre dans une crypte.
+                    \end{tcolorbox}
+                \end{itemize}
+            \end{center}
+        \end{frame}
         \begin{frame}{label=utilisation}
             \frametitle{Les cas d'utilisation}
             \begin{center}
