@@ -83,6 +83,62 @@
                 \end{itemize}
             \end{center}
         \end{frame}
+        \begin{frame}
+            \begin{center}
+                \begin{figure}
+                    \includegraphics[scale=0.30]{img/asymmetric.png}
+                    \caption{\cc --- odder}
+                \end{figure}
+            \end{center}
+        \end{frame}
+    \subsection{Un peu de pratique}
+        \begin{frame}{label=cesar}
+            \frametitle{Le chiffre de César}
+            \begin{center}
+                \begin{itemize}
+                    \item Algorithme utilisé du temps de romains, son fonctionnement est très simple et réalisable à la main.
+                    \pause
+                    \item La clé est un nombre \textit{n} entre 1 et 25.
+                    \pause
+                    \item Pour chiffrer on remplace chaque lettre du message par la n-ième suivante dans l'alphabet.
+                    \pause
+                    \item Pour déchiffrer on remplace chaque lettre par la n-ième précédante.
+                    \pause
+                    \item César("Cryptographie", 3) \pause => Fubswrjudsklh
+                \end{itemize}
+            \end{center}
+        \end{frame}
+        \begin{frame}{label=attack}
+            \frametitle{Décrypter César}
+            \begin{center}
+                \begin{itemize}
+                    \item Approche \textbf{analytique}: la lettre la plus courante est "e". En observant quelle sont les lettres les plus courantes du message on déduit la clé.
+                    \item Approche \textbf{bruteforce}: on essaie toutes les possibilités et on regarde ce qui semble être la réponse.
+                    \item Ces deux approches sont dans le principe toujours celles utilisées aujourd'hui.
+                \end{itemize}
+                Let's practice !
+            \end{center}
+        \end{frame}
+        \begin{frame}{label=fails}
+            \frametitle{Epic fail}
+            \begin{center}
+                \begin{figure}
+                    \includegraphics[scale=0.15]{img/plain.jpg}
+                    \caption{Image originale}
+                \end{figure}
+                \pause
+                \begin{figure}
+                    \includegraphics[scale=0.15]{img/aes_no_chain.jpg}
+                    \caption{Chiffré sans chaînage}
+                \end{figure}
+                \pause
+                \begin{figure}
+                    \includegraphics[scale=0.15]{img/aes_chain.jpg}
+                    \caption{Chiffré avec chaînage}
+                \end{figure}
+                \cc --- Papa November \& Dr Juzam
+            \end{center}
+        \end{frame}
         \appendix
         \begin{frame}
             \bibliography{src/tracking}{}
